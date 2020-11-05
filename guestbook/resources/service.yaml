@@ -7,11 +7,11 @@ metadata:
     tier: frontend
 spec:
   # comment or delete the following line if you want to use a LoadBalancer
-  type: NodePort
+  # type: NodePort
   # if your cluster supports it, uncomment the following to automatically create
   # an external load-balanced IP for the frontend service.
-  # type: LoadBalancer
-  # loadBalancerIP: 10.0.1.50
+  type: LoadBalancer
+  loadBalancerIP: 10.0.1.50
   ports:
   - port: 8811
   selector:
